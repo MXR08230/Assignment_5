@@ -50,7 +50,7 @@ principalComponents = pca2.fit_transform(X_Scale)
 principalDf1 = pd.DataFrame(data = principalComponents, columns = ['principal component 1', 'principal component 2'])
 
 finalDf1 = pd.concat([principalDf1, df[['TENURE']]], axis = 1)
-finalDf1.head()
+print(finalDf1.head())
 
 from sklearn.cluster import KMeans
 nclusters = 2 # this is the k in kmeans
