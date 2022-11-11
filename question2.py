@@ -20,7 +20,7 @@ pca2 = PCA(n_components=3)
 principalComponents = pca2.fit_transform(X_Scale)
 principalDf = pd.DataFrame(data = principalComponents, columns = ['principal component 1', 'principal component 2', 'principal component 3'])
 finalDf = pd.concat([principalDf, df[['class']]], axis = 1)
-print(finalDf.head())
+finalDf.head()
 X_train, X_test, y_train, y_test = train_test_split(X_Scale,y, test_size=0.3,random_state=0)
 
 svc = SVC(max_iter=1000)

@@ -3,11 +3,8 @@ import numpy as np
 import seaborn as sns
 from matplotlib import pyplot as plt
 
-
 df = pd.read_csv("./Iris.csv")
-
 df.head()
-
 
 from sklearn.preprocessing import StandardScaler
 stdsc = StandardScaler()
