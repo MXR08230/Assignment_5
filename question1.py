@@ -12,6 +12,7 @@ import seaborn as sns
 sns.set(style="white", color_codes=True)
 import warnings
 warnings.filterwarnings("ignore")
+
 df= pd.read_csv("./CC.csv")
 
 df.head()
